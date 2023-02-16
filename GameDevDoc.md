@@ -12,7 +12,7 @@
 ##### {firstName}：用户的名
 ##### {username}：用户的用户名（用户的tg账号）
 ##### {amount}：用户上分或下方的金额
-##### {{"InlineKeyboardMarkup":{InlineKeyboardButton objects array}}}：Telegram Bot内联键盘标记（使机器人发送的消息带按钮功能）
+##### {{"InlineKeyboardMarkup":InlineKeyboardButton objects array}}：Telegram Bot内联键盘标记（JSON格式，使机器人发送的消息带按钮功能）
 ##### {apiMessage}：api上分或下分时，api返回数据中的message字段
 
 
