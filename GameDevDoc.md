@@ -144,10 +144,10 @@ API文档请参考[14.用户自动下分API文档](#14用户自动下分API文�
 ## 13.用户自动上分API文档
 ### 请求URL格式（请求url应可在配置文件修改）：http(s)://xxx.com/(xxx)
 ### 请求参数（应编码为JSON格式进行发送）：
-参数名          值类型          注释
-action          string       操作类型，这里固定值为：“recharge”
-userID         string        申请上分的用户的userID
-amount          int           申请上分的金额
+参数名          值类型          注释  
+action          string       操作类型，这里固定值为：“recharge”  
+userID         string        申请上分的用户的userID  
+amount          int           申请上分的金额  
 例子：
 ```json
 {
@@ -157,13 +157,13 @@ amount          int           申请上分的金额
 }
 ```
 ### 请求header
-参数名          值类型          注释
-Content-Type   string        固定值，值为：“application/json”
-X-Auth-Token   string        授权令牌（方便API服务器辨认是否为合法请求，授权令牌需可在配置文件修改）
+参数名          值类型          注释  
+Content-Type   string        固定值，值为：“application/json”  
+X-Auth-Token   string        授权令牌（方便API服务器辨认是否为合法请求，授权令牌需可在配置文件修改）  
 ### 返回格式（JSON）：
-字段名          值类型          注释
-statusCode      int          API返回的结果，200为成功，其他均为失败
-message        string           成功提示或失败原因
+字段名          值类型          注释  
+statusCode      int          API返回的结果，200为成功，其他均为失败  
+message        string           成功提示或失败原因  
 成功例子：
 ```json
 {
@@ -188,10 +188,10 @@ message        string           成功提示或失败原因
 ## 14.用户自动下分API文档
 ### 请求URL格式（请求url应可在配置文件修改）：http(s)://xxx.com/(xxx)
 ### 请求参数（应编码为JSON格式进行发送）：
-参数名          值类型          注释
-action          string       操作类型，这里固定值为：“withdraw”
-userID         string        申请下分的用户的userID
-amount          int           申请下分的金额
+参数名          值类型          注释  
+action          string       操作类型，这里固定值为：“withdraw”  
+userID         string        申请下分的用户的userID  
+amount          int           申请下分的金额  
 例子：
 ```json
 {
@@ -201,13 +201,13 @@ amount          int           申请下分的金额
 }
 ```
 ### 请求header
-参数名          值类型          注释
-Content-Type   string        固定值，值为：“application/json”
-X-Auth-Token   string        授权令牌（方便API服务器辨认是否为合法请求，授权令牌需可在配置文件修改）
+参数名          值类型          注释  
+Content-Type   string        固定值，值为：“application/json”  
+X-Auth-Token   string        授权令牌（方便API服务器辨认是否为合法请求，授权令牌需可在配置文件修改）  
 ### 返回格式（JSON）：
-字段名          值类型          注释
-statusCode      int          API返回的结果，200为成功，其他均为失败
-message        string           成功提示或失败原因
+字段名          值类型          注释  
+statusCode      int          API返回的结果，200为成功，其他均为失败  
+message        string           成功提示或失败原因  
 成功例子：
 ```json
 {
