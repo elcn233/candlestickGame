@@ -1,0 +1,29 @@
+# 日志等级
+# debug | info | warn | error | fatal
+LogLevel: "INFO"
+
+TgBot:
+  Token: "123456:abcdefghijklmnopqrstuvwxyz"
+
+Server:
+  ListenAddress: "www.domain.com:443"
+  Domain: "www.domain.com"
+  TLS:
+    ## TLS必须开启，否则可能会出一些莫名其妙的问题，造成不稳定！
+    Enable: true
+    Cert:
+      CertFile: "cert.pem"
+      KeyFile: "key.pem"
+
+AdminUser: 
+  username: "admin"
+  password: "admin123456"
+
+# 数据库 (MySQL)
+DB:
+  Host: "localhost"
+  Port: 3306
+  User: "game1"
+  Password: "www.password.com"
+  # 数据库名
+  Name: "game1"
